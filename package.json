@@ -11,6 +11,7 @@
   "author": "Gloria Stefania Panchana Jaramillo",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "bull": "^4.12.2",
     "dotenv": "^16.4.5",
