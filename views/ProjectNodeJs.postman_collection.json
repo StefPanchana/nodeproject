@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "2334bd75-1a36-4f5e-b6e1-4927ba6e20ca",
+		"name": "ProjectNodeJs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12056181",
+		"_collection_link": "https://astdel.postman.co/workspace/Team-Workspace~bba8a38e-b0bf-409c-8357-639a91d8cbaf/collection/12056181-2334bd75-1a36-4f5e-b6e1-4927ba6e20ca?action=share&source=collection_link&creator=12056181"
+	},
+	"item": [
+		{
+			"name": "loggin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"stefaniapanchanaj@hotmail.com\",\r\n    \"password\": \"stef.2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/loggin"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkdS9WZmhoeXB6cUV4b1ljQ0xtTVRrdUJTRXB1WWhlSzhjVnFVSS5rZ0kucS9BZERITGRkRFMifSwiaWF0IjoxNzEzNzM3ODY0LCJleHAiOjE3MTM4MjQyNjR9.Obd3iWX3S9QobB3L08BDA3g2H-ZOTHNNhCEMzti-sD4",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAka1VGNEZUWFVNOTZwM0k0NUxHTi9nZWFyclhmVTRVNXNwc2cvV0RJMjkzenQ2YUJqNHNjbUMifSwiaWF0IjoxNzEzNzM4NTUwLCJleHAiOjE3MTM4MjQ5NTB9.UnNTGxLJY-jkGnfvwEF8OU4eR4czvGPZXJTAvnCTpDY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idUser\": 1,\r\n  \"name\": \"Stef\",\r\n  \"age\": 34,\r\n  \"email\": \"stefaniapanchanaj@hotmail.com\",\r\n  \"password\": \"stef.2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/user/1"
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAka1VGNEZUWFVNOTZwM0k0NUxHTi9nZWFyclhmVTRVNXNwc2cvV0RJMjkzenQ2YUJqNHNjbUMifSwiaWF0IjoxNzEzNzM4NTUwLCJleHAiOjE3MTM4MjQ5NTB9.UnNTGxLJY-jkGnfvwEF8OU4eR4czvGPZXJTAvnCTpDY",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/user"
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAka1VGNEZUWFVNOTZwM0k0NUxHTi9nZWFyclhmVTRVNXNwc2cvV0RJMjkzenQ2YUJqNHNjbUMifSwiaWF0IjoxNzEzNzM4NTUwLCJleHAiOjE3MTM4MjQ5NTB9.UnNTGxLJY-jkGnfvwEF8OU4eR4czvGPZXJTAvnCTpDY",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/user/1"
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAka1VGNEZUWFVNOTZwM0k0NUxHTi9nZWFyclhmVTRVNXNwc2cvV0RJMjkzenQ2YUJqNHNjbUMifSwiaWF0IjoxNzEzNzM4NTUwLCJleHAiOjE3MTM4MjQ5NTB9.UnNTGxLJY-jkGnfvwEF8OU4eR4czvGPZXJTAvnCTpDY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idUser\": 3,\r\n  \"name\": \"Coco\",\r\n  \"age\": 3,\r\n  \"email\": \"cocosp@hotmail.com\",\r\n  \"password\": \"coco.2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/user"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAka1VGNEZUWFVNOTZwM0k0NUxHTi9nZWFyclhmVTRVNXNwc2cvV0RJMjkzenQ2YUJqNHNjbUMifSwiaWF0IjoxNzEzNzM4NTUwLCJleHAiOjE3MTM4MjQ5NTB9.UnNTGxLJY-jkGnfvwEF8OU4eR4czvGPZXJTAvnCTpDY",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/user/3"
+			},
+			"response": []
+		}
+	]
+}
