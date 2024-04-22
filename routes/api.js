@@ -8,6 +8,7 @@ var middleware = require('../middleware/middleware');
 
 //Declaracion de controladores
 var UsersController = require('../controllers/user');
+var ClientsController = require('../controllers/client');
 var AuthController = require('../controllers/auth');
 
 //-------------------------------------------------//
@@ -71,7 +72,16 @@ var AuthController = require('../controllers/auth');
 //*************************/
 //Routes for Clients CRUD
 //*************************/
-
+//-- Create 
+api.post('/client', [
+    body("idClient").not().isEmpty(),
+    body("name").not().isEmpty(),
+    body("age").not().isEmpty(),
+    body("phone").not().isEmpty(),
+    body("email").not().isEmpty()
+],
+middleware.userProtectUrl, 
+ClientsController.createClient);
 
 //*************************/
 //Routes for Cars CRUD

@@ -15,5 +15,10 @@ module.exports = {
     UserExist: "Usuario ya existe en la Base de Datos.",
     UserCreated: "Usuario creado con éxito.",
     UserUpdated: "Usuario actualizado con éxito.",
-    UserDeleted: "Usuario eliminado con éxito."
+    UserDeleted: "Usuario eliminado con éxito.",
+    ClientNotFound: "Cliente no encontrado.",
+    ClientExist: "Cliente ya existe en la Base de Datos.",
+    ClientCreated: "Cliente creado con éxito.",
+    ClientUpdated: "Cliente actualizado con éxito.",
+    ClientDeleted: "Cliente eliminado con éxito."
 }
