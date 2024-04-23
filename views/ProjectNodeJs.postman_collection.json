@@ -32,7 +32,7 @@
 				"header": [
 					{
 						"key": "x-nodeproject-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkdS9WZmhoeXB6cUV4b1ljQ0xtTVRrdUJTRXB1WWhlSzhjVnFVSS5rZ0kucS9BZERITGRkRFMifSwiaWF0IjoxNzEzNzM3ODY0LCJleHAiOjE3MTM4MjQyNjR9.Obd3iWX3S9QobB3L08BDA3g2H-ZOTHNNhCEMzti-sD4",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAka1VGNEZUWFVNOTZwM0k0NUxHTi9nZWFyclhmVTRVNXNwc2cvV0RJMjkzenQ2YUJqNHNjbUMifSwiaWF0IjoxNzEzNzM4NTUwLCJleHAiOjE3MTM4MjQ5NTB9.UnNTGxLJY-jkGnfvwEF8OU4eR4czvGPZXJTAvnCTpDY",
 						"type": "text"
 					}
 				],
@@ -130,6 +130,114 @@
 					}
 				],
 				"url": "http://localhost:3000/user/3"
+			},
+			"response": []
+		},
+		{
+			"name": "createClient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkaTFCd1dxRGxGbG5DalQ4eVhVTHVMT2NPalk3dDJ5WGZOSGJnT3F3RWxZckpTMjZUMmdrNFcifSwiaWF0IjoxNzEzODIzNDU2LCJleHAiOjE3MTM5MDk4NTZ9.hD2G0L2tBwxjGpI4RQoIaWDeGtfkAR5OOlokNnmgLaU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idClient\": 4,\r\n  \"name\": \"Tonio\",\r\n  \"age\": 33,\r\n  \"address\": \"s/n\",\r\n  \"city\": \"Valparaiso\",\r\n  \"state\": \"s/n\",\r\n  \"country\": \"Chile\",\r\n  \"phone\": 59342000000,\r\n  \"email\": \"toniotony@hotmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/client"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllClients",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkaTFCd1dxRGxGbG5DalQ4eVhVTHVMT2NPalk3dDJ5WGZOSGJnT3F3RWxZckpTMjZUMmdrNFcifSwiaWF0IjoxNzEzODIzNDU2LCJleHAiOjE3MTM5MDk4NTZ9.hD2G0L2tBwxjGpI4RQoIaWDeGtfkAR5OOlokNnmgLaU",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/client"
+			},
+			"response": []
+		},
+		{
+			"name": "getClientById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkaTFCd1dxRGxGbG5DalQ4eVhVTHVMT2NPalk3dDJ5WGZOSGJnT3F3RWxZckpTMjZUMmdrNFcifSwiaWF0IjoxNzEzODIzNDU2LCJleHAiOjE3MTM5MDk4NTZ9.hD2G0L2tBwxjGpI4RQoIaWDeGtfkAR5OOlokNnmgLaU",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/client/3"
+			},
+			"response": []
+		},
+		{
+			"name": "updateClient",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkaTFCd1dxRGxGbG5DalQ4eVhVTHVMT2NPalk3dDJ5WGZOSGJnT3F3RWxZckpTMjZUMmdrNFcifSwiaWF0IjoxNzEzODIzNDU2LCJleHAiOjE3MTM5MDk4NTZ9.hD2G0L2tBwxjGpI4RQoIaWDeGtfkAR5OOlokNnmgLaU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idClient\": 4,\r\n  \"name\": \"Tonio\",\r\n  \"age\": 33,\r\n  \"address\": \"s/n\",\r\n  \"city\": \"Valparaiso\",\r\n  \"state\": \"Cerro Alegre\",\r\n  \"country\": \"Chile\",\r\n  \"phone\": 59342000000,\r\n  \"email\": \"toniotony@hotmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/client/4"
+			},
+			"response": []
+		},
+		{
+			"name": "CleanClientById",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkaTFCd1dxRGxGbG5DalQ4eVhVTHVMT2NPalk3dDJ5WGZOSGJnT3F3RWxZckpTMjZUMmdrNFcifSwiaWF0IjoxNzEzODIzNDU2LCJleHAiOjE3MTM5MDk4NTZ9.hD2G0L2tBwxjGpI4RQoIaWDeGtfkAR5OOlokNnmgLaU",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/clientclear/4"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteClient",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkaTFCd1dxRGxGbG5DalQ4eVhVTHVMT2NPalk3dDJ5WGZOSGJnT3F3RWxZckpTMjZUMmdrNFcifSwiaWF0IjoxNzEzODIzNDU2LCJleHAiOjE3MTM5MDk4NTZ9.hD2G0L2tBwxjGpI4RQoIaWDeGtfkAR5OOlokNnmgLaU",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/client/4"
 			},
 			"response": []
 		}
