@@ -83,6 +83,36 @@ api.post('/client', [
 middleware.userProtectUrl, 
 ClientsController.createClient);
 
+//-- Read
+api.get('/client', middleware.userProtectUrl, ClientsController.getAllClients);
+
+api.get('/client/:idClient', [
+    body("idClient").not().isEmpty(),
+], 
+middleware.userProtectUrl, 
+ClientsController.getClientById);
+
+//-- Update
+api.put('/client/:idClient',[
+    body("idClient").not().isEmpty(),
+    body("name").not().isEmpty(),
+    body("age").not().isEmpty(),
+    body("address").not().isEmpty(),
+    body("city").not().isEmpty(),
+    body("state").not().isEmpty(),
+    body("country").not().isEmpty(),
+    body("phone").not().isEmpty(),
+    body("email").not().isEmpty()
+],
+middleware.userProtectUrl, 
+ClientsController.updateClient);
+
+//-- Delete
+api.delete('/client/:idClient', middleware.userProtectUrl, ClientsController.deleteClient);
+
+//-- Clear By Id Client previous delete
+api.delete('/clientclear/:idClient', middleware.userProtectUrl, ClientsController.cleanClient);
+
 //*************************/
 //Routes for Cars CRUD
 //*************************/
