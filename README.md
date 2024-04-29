@@ -28,5 +28,7 @@ npm run start
 Usado para los get de Usuarios y Clientes, a fin de minizar el impacto de tiempo cuando se consultan estos datos.
 
 # ##############################################################################################################
-# Postman Files
+# Bull Test
 # ##############################################################################################################
+En la ruta [/bull](http://localhost:3000/bull) se lanzara una prueba de 5 iteraciones para un mensaje en pantalla, 
+esta prueba esta cacheada en memoria con la configuración de 10 minutos.
