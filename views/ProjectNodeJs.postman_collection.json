@@ -71,7 +71,7 @@
 				"header": [
 					{
 						"key": "x-nodeproject-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAka1VGNEZUWFVNOTZwM0k0NUxHTi9nZWFyclhmVTRVNXNwc2cvV0RJMjkzenQ2YUJqNHNjbUMifSwiaWF0IjoxNzEzNzM4NTUwLCJleHAiOjE3MTM4MjQ5NTB9.UnNTGxLJY-jkGnfvwEF8OU4eR4czvGPZXJTAvnCTpDY",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkaTFCd1dxRGxGbG5DalQ4eVhVTHVMT2NPalk3dDJ5WGZOSGJnT3F3RWxZckpTMjZUMmdrNFcifSwiaWF0IjoxNzE0MzU1ODc1LCJleHAiOjE3MTQ0NDIyNzV9.gPxWsreC9VTHaDY9LtlYtWHtlH4_M8T7bhZJW2802ec",
 						"type": "text"
 					}
 				],
@@ -238,6 +238,21 @@
 					}
 				],
 				"url": "http://localhost:3000/client/4"
+			},
+			"response": []
+		},
+		{
+			"name": "TestBull",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-nodeproject-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjY2MjU4ZDE5ODMwNzY3MzRjOGNkZGM2ZiIsImlkVXNlciI6MSwibmFtZSI6IlN0ZWYiLCJhZ2UiOjM0LCJlbWFpbCI6InN0ZWZhbmlhcGFuY2hhbmFqQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkaTFCd1dxRGxGbG5DalQ4eVhVTHVMT2NPalk3dDJ5WGZOSGJnT3F3RWxZckpTMjZUMmdrNFcifSwiaWF0IjoxNzE0MzU1ODc1LCJleHAiOjE3MTQ0NDIyNzV9.gPxWsreC9VTHaDY9LtlYtWHtlH4_M8T7bhZJW2802ec",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/bull"
 			},
 			"response": []
 		}
